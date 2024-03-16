@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~aos/dist/aos.css';
+
+body { font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: white; }
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
+         url('./fonts/ClashDisplay-Variable.woff') format('woff'),
+         url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  

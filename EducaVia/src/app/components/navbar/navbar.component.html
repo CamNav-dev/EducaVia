@@ -1,0 +1,47 @@
+<nav>
+  <mat-toolbar color="primary" *ngIf="!verificar()">
+    <span class="toolbar-items">
+      <button mat-button routerLink="">
+        <span>
+          <img src="../../../assets/logo.png" alt="" class="col-2 m-2">
+          <span class="mat-subtitle-2">EasyAccess</span>
+        </span>
+      </button>
+
+      <button mat-flat-button routerLink="/landing">Explorar</button>
+      <button mat-button routerLink="/landing">¿Quienes somos?</button>
+      <button mat-button routerLink="/landing">Recursos</button>
+      <button mat-button routerLink="/landing">Contáctanos</button>
+    </span>
+
+    <span class="example-spacer"></span>
+
+    <span class="toolbar-items">
+      <button mat-button routerLink="/login">Inicia Sesión</button>
+    </span>
+  </mat-toolbar>
+</nav>
+
+<mat-toolbar color="primary" *ngIf="verificar()">
+  <button mat-button routerLink="">
+    <span>
+      <img src="../../../assets/logo.png" alt="Logo" class="col-2 m-2">
+      <span class="mat-subtitle-2">EasyAccess</span>
+    </span>
+  </button>
+</mat-toolbar>
+
+<mat-menu #menuSalir="matMenu">
+  <button mat-menu-item routerLink="" (click)="cerrar()">
+    <mat-icon>logout</mat-icon>
+    <span>Cerrar sesión</span>
+  </button>
+  <button mat-menu-item>
+    Rol:
+    <span>{{ role }}</span>
+  </button>
+  <button mat-menu-item>
+    Username:
+    <span>{{ username }}</span>
+  </button>
+</mat-menu>
